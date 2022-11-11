@@ -49,6 +49,9 @@ body {
 
 /* Стилі index.html */
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
   color: #ffffff;
 }
@@ -77,8 +80,12 @@ body {
 }
 
 /* Footer */
+.footer {
+  background-color: #2f303a;
+}
 .footer-logo {
   color: #ffffff;
+  text-decoration: none;
 }
 .address {
   color: #ffffff;
