@@ -10,23 +10,23 @@
   <body>
     <header>
       <nav>
-        <a href="./" class="logo">WebStudio</a>
+        <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
         <ul class="nav-list">
           <li><a class="nav-list-item" href="./index.html">Студія</a></li>
           <li><a class="nav-list-item" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="nav-list-item" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts-list">
+        <li><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!-- Герой -->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button" class="btn primary">Замовити послугу</button>
       </section>
       <!-- Перелік рішень -->
       <section class="section">
@@ -59,7 +59,7 @@
       <!-- Чим ми займаємося -->
       <section>
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="images-list">
+        <ul class="section-list">
           <li><img src="./images/box-1.jpg" alt="Keyboard typing" width="370" /></li>
           <li><img src="./images/box-2.jpg" alt="Smartphone look" width="370" /></li>
           <li><img src="./images/box-3.jpg" alt="Color selection" width="370" /></li>
@@ -68,7 +68,7 @@
       <!-- Наша команда -->
       <section>
         <h2 class="section-title">Наша команда</h2>
-        <ul>
+        <ul class="section-list">
           <li>
             <img src="./images/igor-demianenko.jpg" alt="igor Demianenko" width="270" />
             <h3 class="section-list-item">Ігор Дем'яненко</h3>
@@ -93,19 +93,22 @@
       </section>
     </main>
     <footer>
-      <a href="./" class="header-logo">WebStudio</a>
+      <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
       <address>
-        <ul>
+        <ul class="section-list">
           <li>
             <a
               href="https://goo.gl/maps/kWrGyEN4S8KAi9pg8"
               target="_blank"
               rel="noopener nofollow noreferrer"
+              class="address"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>

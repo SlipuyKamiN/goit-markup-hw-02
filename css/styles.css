@@ -1,24 +1,90 @@
 /* колір фону #F5F5F5 */
-/*  колір тексту #212121 */
+/* другорядний колір фону #F5F4FA */
+/* герой і футер колір фону #2F303A */
+/* колір тексту #212121 */
 /* колір абзаців #757575 */
 /* акцент #2196F3 */
 /* білий #FFFFFF */
-/* адрес у футері color: rgba(255, 255, 255, 0.6); */
+/* контакти у футері color: rgba(255, 255, 255, 0.6); */
+:root {
+  --text-primary-color: #212121;
+  --text-p-color: #757575;
+  --background-primary-color: #f5f5f5;
+  --background-secondary-color: #f5f4fa;
+  --accent-color: #2196f3;
+}
 body {
-  background-color: #f5f5f5;
-  color: #212121;
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+}
+.nav-list,
+.contacts-list,
+.section-list {
+  list-style-type: none;
+}
+.nav-list-item:hover,
+.header-contacts:hover,
+.footer-contacts:hover,
+.nav-list-item:focus,
+.header-contacts:focus,
+.footer-contacts:focus {
+  color: var(--accent-color);
 }
 /* Header */
 .logo {
+  color: #000000;
+  text-decoration: none;
 }
-.nav-list {
+.logo.part {
+  color: #2196f3;
 }
 .nav-list-item {
+  color: var(--text-primary-color);
+  text-decoration: none;
+}
+.header-contacts {
+  color: var(--text-p-color);
+  text-decoration: none;
 }
 
-/* Герой */
-.hero {
-}
+/* Стилі index.html */
+/* Hero */
 .hero-title {
+  color: #ffffff;
+}
+.btn {
+  cursor: pointer;
+}
+.btn.primary {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: none;
 }
 /* Перелік рішень */
+.item-desc {
+  color: var(--text-p-color);
+}
+/* Стилі portfolio.html */
+.btn.secondary {
+  background-color: var(--background-secondary-color);
+  color: var(--text-primary-color);
+  border: none;
+}
+.btn.secondary:hover,
+.btn.secondary:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Footer */
+.footer-logo {
+  color: #ffffff;
+}
+.address {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
