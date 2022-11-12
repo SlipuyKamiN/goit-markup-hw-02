@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -14,7 +20,7 @@
         <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
         <ul class="nav-list">
           <li><a class="nav-list-item" href="./index.html">Студія</a></li>
-          <li><a class="nav-list-item" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav-list-item current" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="nav-list-item" href="">Контакти</a></li>
         </ul>
       </nav>
@@ -24,67 +30,91 @@
       </ul>
     </header>
     <main>
-      <!-- buttons -->
-      <ul class="section-list">
-        <li><button type="button" class="btn secondary">Усі</button></li>
-        <li><button type="button" class="btn secondary">Веб-сайти</button></li>
-        <li><button type="button" class="btn secondary">Додатки</button></li>
-        <li><button type="button" class="btn secondary">Дизайн</button></li>
-        <li><button type="button" class="btn secondary">Маркетинг</button></li>
-      </ul>
-      <!-- projects -->
-      <h2>Усі проекти</h2>
-      <ul class="section-list">
-        <li>
-          <img src="./images/technocrack.jpg" alt="Ноутбук з картками на екрані" width="370" />
-          <h3 class="section-list-item">Технокряк</h3>
-          <p class="item-desc">Веб-сайт</p>
-        </li>
-        <li>
-          <img src="./images/poster.jpg" alt="Два баскетболісти" width="370" />
-          <h3 class="section-list-item">Постер New Orlean vs Golden Star</h3>
-          <p class="item-desc">Дизайн</p>
-        </li>
-        <li>
-          <img src="./images/seafood.jpg" alt="Лого з акулою" width="370" />
-          <h3 class="section-list-item">Ресторан Seafood</h3>
-          <p class="item-desc">Додаток</p>
-        </li>
-        <li>
-          <img src="./images/prime.jpg" alt="Навушники" width="370" />
-          <h3 class="section-list-item">Проєкт Prime</h3>
-          <p class="item-desc">Маркетинг</p>
-        </li>
-        <li>
-          <img src="./images/boxes.jpg" alt="Дві картонні коробки" width="370" />
-          <h3 class="section-list-item">Проєкт Boxes</h3>
-          <p class="item-desc">Додаток</p>
-        </li>
-        <li>
-          <img src="./images/inspiration.jpg" alt="Екран монітора" width="370" />
-          <h3 class="section-list-item">Inspiration has no Borders</h3>
-          <p class="item-desc">Веб-сайт</p>
-        </li>
-        <li>
-          <img src="./images/limited-edition.jpg" alt="Відкритий журнал" width="370" />
-          <h3 class="section-list-item">Видання Limited Edition</h3>
-          <p class="item-desc">Дизайн</p>
-        </li>
-        <li>
-          <img src="./images/lab.jpg" alt="Бірка з мотузкою" width="370" />
-          <h3 class="section-list-item">Проєкт LAB</h3>
-          <p class="item-desc">Маркетинг</p>
-        </li>
-        <li>
-          <img src="./images/growing-business.jpg" alt="Набирають текст на ноутбуці" width="370" />
-          <h3 class="section-list-item">Growing Business</h3>
-          <p class="item-desc">Додаток</p>
-        </li>
-      </ul>
+      <section>
+        <h1>Усі проекти</h1>
+        <!-- buttons -->
+        <ul class="btn-list">
+          <li><button type="button" class="btn secondary">Усі</button></li>
+          <li><button type="button" class="btn secondary">Веб-сайти</button></li>
+          <li><button type="button" class="btn secondary">Додатки</button></li>
+          <li><button type="button" class="btn secondary">Дизайн</button></li>
+          <li><button type="button" class="btn secondary">Маркетинг</button></li>
+        </ul>
+        <!-- projects -->
+        <ul class="project-list">
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/technocrack.jpg" alt="Ноутбук з картками на екрані" width="370" />
+              <h2 class="project-title">Технокряк</h2>
+              <p class="project-desc">Веб-сайт</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/poster.jpg" alt="Два баскетболісти" width="370" />
+              <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+              <p class="project-desc">Дизайн</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/seafood.jpg" alt="Лого з акулою" width="370" />
+              <h2 class="project-title">Ресторан Seafood</h2>
+              <p class="project-desc">Додаток</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/prime.jpg" alt="Навушники" width="370" />
+              <h2 class="project-title">Проєкт Prime</h2>
+              <p class="project-desc">Маркетинг</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/boxes.jpg" alt="Дві картонні коробки" width="370" />
+              <h2 class="project-title">Проєкт Boxes</h2>
+              <p class="project-desc">Додаток</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/inspiration.jpg" alt="Екран монітора" width="370" />
+              <h2 class="project-title">Inspiration has no Borders</h2>
+              <p class="project-desc">Веб-сайт</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/limited-edition.jpg" alt="Відкритий журнал" width="370" />
+              <h2 class="project-title">Видання Limited Edition</h2>
+              <p class="project-desc">Дизайн</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img src="./images/lab.jpg" alt="Бірка з мотузкою" width="370" />
+              <h2 class="project-title">Проєкт LAB</h2>
+              <p class="project-desc">Маркетинг</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="project-link">
+              <img
+                src="./images/growing-business.jpg"
+                alt="Набирають текст на ноутбуці"
+                width="370"
+              />
+              <h2 class="project-title">Growing Business</h2>
+              <p class="project-desc">Додаток</p>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <a href="./index.html" class="footer-logo"><span class="logo part">Web</span>Studio</a>
+      <a href="./index.html" class="logo foot"><span class="logo part">Web</span>Studio</a>
       <address>
         <ul class="section-list">
           <li>
