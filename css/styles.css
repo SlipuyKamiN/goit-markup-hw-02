@@ -99,6 +99,10 @@ body {
   letter-spacing: 0.06em;
   /* border: none; */
 }
+.btn.primary:hover,
+.btn.primary:focus {
+  background-color: #188ce8;
+}
 /* Перелік рішень */
 .section-title {
   font-weight: 700;
