@@ -54,6 +54,7 @@ body {
 }
 .nav-list-item {
   color: var(--text-primary-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -125,7 +126,6 @@ body {
   letter-spacing: 0.03em;
 }
 .profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   /* text-align: center; */
@@ -163,7 +163,6 @@ body {
 }
 .project-desc {
   color: var(--text-p-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
