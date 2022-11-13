@@ -7,20 +7,21 @@
 /* білий #FFFFFF */
 /* контакти у футері color: rgba(255, 255, 255, 0.6); */
 :root {
+  --black-color: #000000;
   --text-primary-color: #212121;
   --text-p-color: #757575;
-  --background-primary-color: #f5f5f5;
+  --primary-white-color: #ffffff;
   --background-secondary-color: #f5f4fa;
+  --hero-footer-color--: #2f303a;
   --accent-color: #2196f3;
+  --primary-btn-accent-color--: #188ce8;
 }
 body {
-  background-color: var(--background-primary-color);
+  background-color: var(--primary-white-color);
   color: var(--text-primary-color);
 
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .nav-list,
@@ -31,14 +32,16 @@ body {
 .nav-list-item:hover,
 .header-contacts:hover,
 .footer-contacts:hover,
+.address:hover,
 .nav-list-item:focus,
 .header-contacts:focus,
-.footer-contacts:focus {
+.footer-contacts:focus,
+.address:focus {
   color: var(--accent-color);
 }
 /* Header */
 .logo {
-  color: #000000;
+  color: var(--black-color);
   font-family: Raleway, sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -68,14 +71,26 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* Стилі index.html */
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-color--);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,23 +100,19 @@ body {
 }
 .btn {
   cursor: pointer;
+  font-family: Roboto, sans-serif;
 }
 .btn.primary {
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  /* border: none; */
 }
 .btn.primary:hover,
 .btn.primary:focus {
-  background-color: #188ce8;
+  background-color: var(--primary-btn-accent-color--);
 }
 /* Перелік рішень */
 .section-title {
@@ -113,7 +124,12 @@ body {
 }
 .item-desc {
   color: var(--text-p-color);
+  /* font-weight: 400; */
+  line-height: 1.71;
   /* успадковано від Body */
+}
+.team-section {
+  background-color: var(--background-secondary-color);
 }
 .section-list-title {
   font-weight: 700;
@@ -122,17 +138,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.section-card {
+  background-color: var(--primary-white-color);
+}
 .section-list-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 /* Стилі portfolio.html */
@@ -146,14 +163,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* text-align: center; */
   letter-spacing: 0.03em;
-  /* border: none; */
 }
 .btn.secondary:hover,
 .btn.secondary:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .project-link {
   text-decoration: none;
@@ -168,19 +183,20 @@ body {
 .project-desc {
   color: var(--text-p-color);
   font-size: 16px;
+  /* font-weight: 400; */
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
 /* Footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-color--);
 }
 .foot {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .address {
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-style: normal;
   /* успадковано від Body */
   text-decoration: none;
